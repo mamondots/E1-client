@@ -1,17 +1,20 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+/*  ---break--- */
+@custom-variant dark (&:is(.dark *));
 
 @layer base {
   .Container {
-    @apply 2xl:px-28 xl:px-20 lg:px-10 md:px-10 px-4;
+    @apply 2xl:px-28 xl:px-20 lg:px-8 md:px-8 px-4;
   }
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-color: #ff6200; /*  primary color */
-  --secondary-color: #202020; /*  secondary color */
-  --thirdly-color: #a0a2a7; /*  secondary color */
+  --primary-color: #087096; /*  primary color */
+  --secondary-color: #008cba; /*  secondary color */
+  --tertiary-color: #a0a2a7; /*  secondary color */
 }
 
 @theme inline {
@@ -21,18 +24,18 @@
   --font-mono: var(--font-geist-mono);
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
-  --color-thirdly: var(--thirdly-color);
+  --color-tertiary: var(--thirdly-color);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+.custom-pagination .swiper-pagination-bullet {
+  @apply w-4 h-4 bg-transparent border rounded-full opacity-60 transition-all lg:mt-8 mt-4 cursor-pointer;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  @apply bg-primary border border-primary opacity-100 scale-110;
+}

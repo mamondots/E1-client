@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { lato } from "./font";
+import { poppins } from "./font";
 
 export const metadata: Metadata = {
   title: "clothingSite",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }
