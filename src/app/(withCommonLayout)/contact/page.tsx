@@ -10,6 +10,57 @@ const page = () => {
       <PageSection second="Contact" />
       <div className="Container mt-12">
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 lg:gap-0 gap-12">
+          <div className="">
+            <div>
+              <h2 className="text-lg font-medium">Send Us a Message</h2>
+              <p className="mt-2 text-[#262626]/60">
+                Enter your name, valid email address, and number to contact us
+              </p>
+            </div>
+
+            <div className="mt-8">
+              <form className="flex flex-col gap-4">
+                <div>
+                  <input
+                    className="px-4 py-2 border rounded outline-none w-full"
+                    type="text"
+                    placeholder="Name"
+                  />
+                </div>
+                <div>
+                  <input
+                    className="px-4 py-2 border rounded outline-none w-full"
+                    type="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div>
+                  <input
+                    className="px-2 py-2 border rounded outline-none w-full"
+                    type="tel"
+                    placeholder="Phone"
+                  />
+                </div>
+
+                <div>
+                  <textarea
+                    className="px-2 py-2 border rounded outline-none w-full"
+                    placeholder="Your messages"
+                    cols={30}
+                    rows={6}
+                  ></textarea>
+                </div>
+
+                <div>
+                  <input
+                    className="px-2 py-2 border bg-primary hover:bg-secondary duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
+                    type="submit"
+                    value="Send Message"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
           <div className=" relative lg:px-12">
             <div>
               <h2 className="text-xl font-medium">Get in Touch</h2>
@@ -61,57 +112,6 @@ const page = () => {
                   Friday — Closed
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="">
-            <div>
-              <h2 className="text-lg font-medium">Send Us a Message</h2>
-              <p className="mt-2 text-[#262626]/60">
-                Enter your name, valid email address, and number to contact us
-              </p>
-            </div>
-
-            <div className="mt-8">
-              <form className="flex flex-col gap-4">
-                <div>
-                  <input
-                    className="px-4 py-2 border rounded outline-none w-full"
-                    type="text"
-                    placeholder="Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="px-4 py-2 border rounded outline-none w-full"
-                    type="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="px-2 py-2 border rounded outline-none w-full"
-                    type="tel"
-                    placeholder="Phone"
-                  />
-                </div>
-
-                <div>
-                  <textarea
-                    className="px-2 py-2 border rounded outline-none w-full"
-                    placeholder="Your messages"
-                    cols={30}
-                    rows={6}
-                  ></textarea>
-                </div>
-
-                <div>
-                  <input
-                    className="px-2 py-2 border bg-primary hover:bg-secondary duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
-                    type="submit"
-                    value="Send Message"
-                  />
-                </div>
-              </form>
             </div>
           </div>
         </div>

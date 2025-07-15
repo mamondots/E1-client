@@ -10,6 +10,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-[#262626] py-12 Container">
@@ -72,18 +73,26 @@ const Footer = () => {
           <h2 className="text-white text-base">Quick links</h2>
 
           <ul className="text-white/60 mt-4 flex flex-col gap-2 cursor-pointer text-sm">
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              Privacy Policy
-            </li>
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              Terms & Conditions
-            </li>
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              Return Policy
-            </li>
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              Order Policy
-            </li>
+            <Link href="privacyPolicy">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                Privacy Policy
+              </li>
+            </Link>
+            <Link href="/terms&Conditions">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                Terms & Conditions
+              </li>
+            </Link>
+            <Link href="/returnPolicy">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                Return Policy
+              </li>
+            </Link>
+            <Link href="/orderPolicy">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                Order Policy
+              </li>
+            </Link>
           </ul>
         </div>
         <div>

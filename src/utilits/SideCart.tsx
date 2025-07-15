@@ -5,6 +5,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ShoppingCart } from "lucide-react";
+import Link from "next/link";
 
 const SideCart = () => {
   return (
@@ -29,12 +30,16 @@ const SideCart = () => {
         </div>
         <SheetFooter className="px-0 py-0">
           <div className="flex items-center">
-            <div className="flex-1 bg-[#262626] text-white text-center capitalize py-2 cursor-pointer">
-              view cart
-            </div>
-            <div className="flex-1 bg-primary text-white text-center capitalize py-2 cursor-pointer">
-              checkout
-            </div>
+            <Link href="/cart" className="flex-1">
+              <div className="bg-[#262626] text-white text-center capitalize py-2 cursor-pointer">
+                view cart
+              </div>
+            </Link>
+            <Link href="/checkout" className="flex-1">
+              <div className=" bg-primary text-white text-center capitalize py-2 cursor-pointer">
+                checkout
+              </div>
+            </Link>
           </div>
         </SheetFooter>
       </SheetContent>

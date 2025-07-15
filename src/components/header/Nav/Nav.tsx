@@ -34,12 +34,16 @@ const Nav = () => {
           <p>
             <SerachBar />
           </p>
-          <p className="lg:block hidden">
-            <UserRound size={18} />
-          </p>
-          <p>
-            <Heart size={18} />
-          </p>
+          <Link href="/singIn">
+            <p className="lg:block hidden">
+              <UserRound size={18} />
+            </p>
+          </Link>
+          <Link href="/wishlist">
+            <p>
+              <Heart size={18} />
+            </p>
+          </Link>
           <p>
             <SideCart />
           </p>
