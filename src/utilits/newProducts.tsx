@@ -83,7 +83,8 @@ export const newProductList = [
     title: "Turquoise Printed and Embroidered Viscose-Cotton Shalwar Kameez",
     price: 520,
     mrpPrice: 652,
-    description: "",
+    description:
+      "Crimson red dobby texture printed viscose-cotton kameez with golden, copper, olive, orange, pink, yellow, pastel green and mint embroidery. Comes with crimson red cotton shalwar and matching printed vortex-cotton dupatta with tassels.",
     size: ["s", "m", "l", "xl"],
     category: "man",
     thumbelImage: dress9,
@@ -93,5 +94,22 @@ export const newProductList = [
     sku: "CB-125486",
     label: "Best Seller",
     availability: "Out of stock",
+  },
+  {
+    id: 6,
+    title: "Purple Pabna Cotton Monipuri Buti Saree",
+    price: 3500,
+    mrpPrice: 4201,
+    description:
+      "Green texture printed vortex-viscose-cotton kameez with purple embroidery. Comes with green printed vortex-viscose-cotton shalwar and matching printed viscose-cotton dupatta with tassels.",
+    size: ["s", "m", "l", "xl"],
+    category: "woman",
+    thumbelImage: dress1,
+    backViewImage: dress2,
+    images: [dress1, dress2, dress3, dress4],
+    quintity: 20,
+    sku: "AB-125486",
+    label: "Best Seller",
+    availability: "In stock",
   },
 ];

@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div>
       <PageSection second="Shop" />
-      <div className="flex gap-8 Container mt-12">
+      <div className="flex xl:gap-8 gap-4 Container md:mt-12 mt-6">
         <div className="w-1/4 hidden lg:block">
           <ShopSideBar />
         </div>

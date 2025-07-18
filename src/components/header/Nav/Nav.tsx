@@ -11,14 +11,14 @@ import SideNav from "./SideNav";
 
 const Nav = () => {
   return (
-    <>
+    <div className="">
       <div className="Container py-4 flex items-center justify-between">
         <div className="lg:hidden flex">
           <SideNav />
         </div>
-        <div className="">
+        <Link href="/" className="">
           <Image src={logo} alt="Logo" width={100} height={100} />
-        </div>
+        </Link>
 
         <div className="lg:block hidden">
           <ul className="lg:flex hidden items-center gap-6 ">
@@ -52,7 +52,7 @@ const Nav = () => {
       <div>
         <CategoryBar />
       </div>
-    </>
+    </div>
   );
 };
 

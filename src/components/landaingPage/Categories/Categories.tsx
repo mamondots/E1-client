@@ -61,7 +61,7 @@ const Categories = () => {
         {categoresiList.map((category) => (
           <SwiperSlide key={category.id} className="px-1">
             <Link
-              href="/"
+              href="/product"
               className="flex flex-col items-center justify-center group"
             >
               <div className="overflow-hidden border border-[#262626]/24 hover:border-primary/40 duration-300 rounded cursor-pointer">

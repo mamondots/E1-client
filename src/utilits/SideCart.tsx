@@ -5,8 +5,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ShoppingCart } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-
+import cartImg from "@/assets/image/cart-empty.webp";
 const SideCart = () => {
   return (
     <Sheet>
@@ -18,15 +19,8 @@ const SideCart = () => {
           <h2>Your Items</h2>
 
           <div className="flex items-center justify-center mt-20">
-            <h2 className="text-lg font-semibold text-[#262626]/50">
-              Have no items
-            </h2>
+            <Image src={cartImg} alt="Cart Empty" width={200} height={200} />
           </div>
-
-          {/* <div className="flex absolute bottom-0">
-            <div>view cart</div>
-            <div>checkout</div>
-          </div> */}
         </div>
         <SheetFooter className="px-0 py-0">
           <div className="flex items-center">
