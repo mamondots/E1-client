@@ -49,18 +49,26 @@ const Footer = () => {
           <h2 className="text-white text-base">Our Company</h2>
 
           <ul className="text-white/60 mt-4 flex flex-col gap-2 cursor-pointer text-sm">
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              About Us
-            </li>
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              Contact Us
-            </li>
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              Shop
-            </li>
-            <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
-              Blogs
-            </li>
+            <Link href="/about">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                About Us
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                Contact Us
+              </li>
+            </Link>
+            <Link href="/product">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                Shop
+              </li>
+            </Link>
+            <Link href="/blogs">
+              <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
+                Blogs
+              </li>
+            </Link>
             <li className="hover:ml-2 hover:text-primary duration-300 cursor-pointer">
               Our Store
             </li>

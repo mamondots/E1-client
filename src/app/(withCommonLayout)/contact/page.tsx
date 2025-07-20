@@ -1,9 +1,10 @@
 import PageSection from "@/utilits/PageSection";
-import React from "react";
 
 import { FaPhone } from "react-icons/fa6";
 import { FaInfo } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
+
+import ContactForm from "@/utilits/ContactForm";
 const page = () => {
   return (
     <div>
@@ -18,48 +19,7 @@ const page = () => {
               </p>
             </div>
 
-            <div className="mt-8">
-              <form className="flex flex-col gap-4">
-                <div>
-                  <input
-                    className="px-4 py-2 border rounded outline-none w-full"
-                    type="text"
-                    placeholder="Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="px-4 py-2 border rounded outline-none w-full"
-                    type="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="px-2 py-2 border rounded outline-none w-full"
-                    type="tel"
-                    placeholder="Phone"
-                  />
-                </div>
-
-                <div>
-                  <textarea
-                    className="px-2 py-2 border rounded outline-none w-full"
-                    placeholder="Your messages"
-                    cols={30}
-                    rows={6}
-                  ></textarea>
-                </div>
-
-                <div>
-                  <input
-                    className="px-2 py-2 border bg-primary hover:bg-secondary duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
-                    type="submit"
-                    value="Send Message"
-                  />
-                </div>
-              </form>
-            </div>
+            <ContactForm />
           </div>
           <div className=" relative lg:px-12">
             <div>

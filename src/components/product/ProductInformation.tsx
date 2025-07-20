@@ -5,10 +5,12 @@ const ProductInformation = () => {
     <div className="mt-8">
       <Tabs defaultValue="details" className="w-full">
         <TabsList className="">
-          <TabsTrigger className=" shadow-none " value="details">
-            Product Details
+          <TabsTrigger className="shadow-none cursor-pointer " value="details">
+            Details
           </TabsTrigger>
-          <TabsTrigger value="reviews">Reviews</TabsTrigger>
+          <TabsTrigger className="cursor-pointer" value="reviews">
+            Reviews
+          </TabsTrigger>
         </TabsList>
         <TabsContent
           className="rounded border border-[#262626]/40 p-4 mt-2"
