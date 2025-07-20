@@ -3,7 +3,13 @@ import { blogsList } from "@/utilits/blogsList";
 import PageSection from "@/utilits/PageSection";
 import PaginationList from "@/utilits/Pagination";
 import SectionTitle from "@/utilits/SectionTitle";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "oqtos | blogs",
+  description: "Best E-commerce platform for your business",
+};
 
 const page = () => {
   return (

@@ -2,6 +2,13 @@ import PageSection from "@/utilits/PageSection";
 import Image from "next/image";
 import React from "react";
 import img from "@/assets/blogs/blog1.webp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "oqtos | blog",
+  description: "Best E-commerce platform for your business",
+};
+
 const page = () => {
   return (
     <div>

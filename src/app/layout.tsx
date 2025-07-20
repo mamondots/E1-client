@@ -4,7 +4,7 @@ import "./globals.css";
 import { poppins } from "./font";
 
 export const metadata: Metadata = {
-  title: "clothingSite",
+  title: "Oqtos | Clothing Store",
   description: "A clothing store website",
 };
 

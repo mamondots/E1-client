@@ -1,10 +1,16 @@
 import { cartList } from "@/utilits/cart";
 import PageSection from "@/utilits/PageSection";
 import { Trash } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BiMinus, BiPlus } from "react-icons/bi";
+
+export const metadata: Metadata = {
+  title: "oqtos | cart",
+  description: "Best E-commerce platform for your business",
+};
 
 const page = () => {
   return (

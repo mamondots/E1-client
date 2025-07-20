@@ -5,6 +5,13 @@ import { FaInfo } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
 
 import ContactForm from "@/utilits/ContactForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "oqtos | contact",
+  description: "Best E-commerce platform for your business",
+};
+
 const page = () => {
   return (
     <div>

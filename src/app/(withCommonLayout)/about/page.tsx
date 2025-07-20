@@ -3,6 +3,13 @@ import React from "react";
 import img from "@/assets/banner/about.webp";
 import Image from "next/image";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "oqtos | about",
+  description: "Best E-commerce platform for your business",
+};
+
 const page = () => {
   return (
     <div>

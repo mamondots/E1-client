@@ -1,8 +1,14 @@
 import PageSection from "@/utilits/PageSection";
 import { wishList } from "@/utilits/wish";
 import { Trash } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "oqtos | wishlist",
+  description: "Best E-commerce platform for your business",
+};
 
 const page = () => {
   return (

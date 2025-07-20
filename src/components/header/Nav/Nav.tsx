@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/assets/logo/logo2.png";
+import logo from "@/assets/logo/qutox.png";
 import { menuList } from "@/utilits/menuList";
 import Link from "next/link";
 import CategoryBar from "../CategoryBar/CategoryBar";

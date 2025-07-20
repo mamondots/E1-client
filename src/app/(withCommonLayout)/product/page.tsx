@@ -1,7 +1,13 @@
 import ShopProdicts from "@/components/shop/ShopProdicts";
 import ShopSideBar from "@/components/shop/ShopSideBar";
 import PageSection from "@/utilits/PageSection";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "oqtos | products",
+  description: "Best E-commerce platform for your business",
+};
 
 const page = () => {
   return (

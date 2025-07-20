@@ -1,7 +1,13 @@
 import CheckoutInfo from "@/components/Checkout/CheckoutInfo/CheckoutInfo";
 import CheckoutProducts from "@/components/Checkout/CheckoutProducts/CheckoutProducts";
 import PageSection from "@/utilits/PageSection";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "oqtos | checkout",
+  description: "Best E-commerce platform for your business",
+};
 
 const page = () => {
   return (

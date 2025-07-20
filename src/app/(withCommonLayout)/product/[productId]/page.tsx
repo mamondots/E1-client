@@ -16,6 +16,12 @@ import ShippingInfo from "@/utilits/ShippingInfo";
 import ImageGallery from "@/utilits/ImageGallery";
 import ProductInformation from "@/components/product/ProductInformation";
 import ReletiveProducts from "@/components/product/ReletiveProducts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "oqtos | product",
+  description: "Best E-commerce platform for your business",
+};
 
 const page = () => {
   return (

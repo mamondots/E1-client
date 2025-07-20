@@ -1,5 +1,11 @@
 import PageSection from "@/utilits/PageSection";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "oqtos | terms & conditions",
+  description: "Best E-commerce platform for your business",
+};
 
 const page = () => {
   return (

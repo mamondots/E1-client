@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/assets/logo/footer-logo.svg";
+import logo from "@/assets/logo/qutoxFooter.png";
 import Image from "next/image";
 import {
   Facebook,
