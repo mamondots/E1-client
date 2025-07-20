@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { GitCompare, Heart, Search } from "lucide-react";
 import React, { useState } from "react";
@@ -13,13 +14,13 @@ import { TProduct } from "@/types";
 
 const optionVariants = {
   hidden: { opacity: 0, x: 20 },
-  visible: (i: number) => ({
+  visible: (i: number): any => ({
     opacity: 1,
     x: 0,
     transition: {
       delay: i * 0.1,
       duration: 0.3,
-      ease: [0.17, 0.67, 0.83, 0.67],
+      ease: "cubic-bezier(0.17, 0.67, 0.83, 0.67)", // 👈 FIXED
     },
   }),
   exit: { opacity: 0, x: 20, transition: { duration: 0.2 } },
@@ -31,11 +32,11 @@ const icons = [
   { icon: Search, label: "Quick View" },
 ];
 
-interface productPros {
+interface ProductProps {
   product: TProduct;
 }
 
-const ProductOption: React.FC<productPros> = ({ product }) => {
+const ProductOption: React.FC<ProductProps> = ({ product }) => {
   const [isQuickViewOpen, setQuickViewOpen] = useState(false);
 
   const handleClick = (label: string) => {

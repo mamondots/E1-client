@@ -36,7 +36,7 @@ export const newProductList = [
     mrpPrice: 3251,
     description:
       "Black printed cotton kameez with embroidery. Comes with matching cotton shalwar and white cotton dupatta.",
-    size: ["s", "m", "l", "xl"],
+    size: ["s", "m", "xl"],
     category: "woman",
     thumbelImage: dress3,
     backViewImage: dress4,
@@ -52,7 +52,7 @@ export const newProductList = [
     mrpPrice: "",
     description:
       "Crimson red dobby texture printed viscose-cotton kameez with golden, copper, olive, orange, pink, yellow, pastel green and mint embroidery. Comes with crimson red cotton shalwar and matching printed vortex-cotton dupatta with tassels.",
-    size: ["s", "m", "l", "xl"],
+    size: ["m", "l", "xl"],
     category: "woman",
     thumbelImage: dress5,
     backViewImage: dress6,
@@ -69,7 +69,7 @@ export const newProductList = [
     mrpPrice: 3432,
     description:
       "Brown printed endi silk panjabi with white embroidery. Features in-seam side pockets.",
-    size: ["s", "m", "l", "xl"],
+    size: ["s", "m", "l"],
     category: "man",
     thumbelImage: dress7,
     backViewImage: dress8,
@@ -85,7 +85,7 @@ export const newProductList = [
     mrpPrice: 652,
     description:
       "Crimson red dobby texture printed viscose-cotton kameez with golden, copper, olive, orange, pink, yellow, pastel green and mint embroidery. Comes with crimson red cotton shalwar and matching printed vortex-cotton dupatta with tassels.",
-    size: ["s", "m", "l", "xl"],
+    size: ["s", "l", "xl"],
     category: "man",
     thumbelImage: dress9,
     backViewImage: dress10,
@@ -102,7 +102,7 @@ export const newProductList = [
     mrpPrice: 4201,
     description:
       "Green texture printed vortex-viscose-cotton kameez with purple embroidery. Comes with green printed vortex-viscose-cotton shalwar and matching printed viscose-cotton dupatta with tassels.",
-    size: ["s", "m", "l", "xl"],
+    size: ["s", "m", "xl"],
     category: "woman",
     thumbelImage: dress1,
     backViewImage: dress2,

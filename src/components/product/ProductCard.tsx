@@ -14,11 +14,11 @@ import { poppins } from "@/app/font";
 import Link from "next/link";
 import toast from "react-hot-toast";
 
-interface productPros {
-  product: TProduct;
-}
+// interface productPros {
+//   product: TProduct;
+// }
 
-const ProductCard: React.FC<productPros> = ({ product }) => {
+const ProductCard = ({ product }: { product: TProduct }) => {
   const { title, price, mrpPrice, thumbelImage, backViewImage, label, id } =
     product;
 
