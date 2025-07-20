@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
+
 import { GitCompare, Heart, Search } from "lucide-react";
 import React, { useState } from "react";
 import {
@@ -20,7 +21,7 @@ const optionVariants = {
     transition: {
       delay: i * 0.1,
       duration: 0.3,
-      ease: "cubic-bezier(0.17, 0.67, 0.83, 0.67)", // 👈 FIXED
+      ease: "easeInOut",
     },
   }),
   exit: { opacity: 0, x: 20, transition: { duration: 0.2 } },
@@ -43,6 +44,10 @@ const ProductOption: React.FC<ProductProps> = ({ product }) => {
     if (label === "Quick View") {
       setQuickViewOpen(true);
     }
+  };
+
+  const handleCloseQuickView = () => {
+    setQuickViewOpen(false);
   };
 
   return (
@@ -82,7 +87,7 @@ const ProductOption: React.FC<ProductProps> = ({ product }) => {
 
       {/* Quick View Dialog Control */}
       <Dialog open={isQuickViewOpen} onOpenChange={setQuickViewOpen}>
-        <QuickView product={product} />
+        <QuickView product={product} onClose={handleCloseQuickView} />
       </Dialog>
     </>
   );

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logo from "@/assets/logo/logo.svg";
+import logo from "@/assets/logo/qutox.png";
 import { AlignJustify, ChevronDown, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { categoryList } from "@/utilits/categoryList";

@@ -3,11 +3,15 @@ import { DialogContent } from "@/components/ui/dialog";
 import { TProduct } from "@/types";
 import Image from "next/image";
 import { Flame, Minus, Plus } from "lucide-react";
+import Link from "next/link";
+import toast from "react-hot-toast";
 
-interface productPros {
+interface ProductProps {
   product: TProduct;
+  onClose: () => void; // New prop to close modal
 }
-const QuickView: React.FC<productPros> = ({ product }) => {
+
+const QuickView: React.FC<ProductProps> = ({ product, onClose }) => {
   const {
     title,
     price,
@@ -20,6 +24,8 @@ const QuickView: React.FC<productPros> = ({ product }) => {
   } = product;
 
   const [count, setCount] = useState(1);
+  const [isCartLoading, setIsCartLoading] = useState(false);
+
   const handleIncrement = () => {
     setCount((prev) => prev + 1);
   };
@@ -27,8 +33,22 @@ const QuickView: React.FC<productPros> = ({ product }) => {
   const handleDecrement = () => {
     setCount((prev) => (prev > 0 ? prev - 1 : 0));
   };
+
+  const handleAddToCart = () => {
+    if (isCartLoading) return;
+    setIsCartLoading(true);
+    setTimeout(() => {
+      setIsCartLoading(false);
+      toast.success("Added to cart!", {
+        duration: 2000,
+        position: "top-right",
+      });
+      onClose(); // Close modal after success
+    }, 1000); // Simulate API delay
+  };
+
   return (
-    <DialogContent className={`p-2 lg:max-w-3xl border-[#262629]/20 rounded `}>
+    <DialogContent className={`p-2 lg:max-w-3xl border-[#262629]/20 rounded`}>
       <div className="flex gap-4">
         <div className="lg:w-1/2">
           <Image
@@ -62,7 +82,7 @@ const QuickView: React.FC<productPros> = ({ product }) => {
             {description}
           </p>
           <p className="mt-2 text-sm text-[#262629]/80">
-            <span className="font-semibold">sku</span> : {sku}
+            <span className="font-semibold">SKU</span> : {sku}
           </p>
           <p className="mt-2 text-sm text-[#262629]/80">
             <span className="font-semibold">Availability</span> : {availability}
@@ -98,18 +118,27 @@ const QuickView: React.FC<productPros> = ({ product }) => {
                 <Minus size={16} />
               </p>
             </div>
-            <div className="w-full bg-primary hover:bg-secondary cursor-pointer duration-300 rounded text-white text-center py-1.5">
+            <div
+              onClick={handleAddToCart}
+              className="w-full bg-primary hover:bg-secondary cursor-pointer duration-300 rounded text-white text-center py-1.5"
+            >
               <button className="text-sm outline-none cursor-pointer">
-                Add To Cart
+                {isCartLoading ? (
+                  <div className="h-4 w-4 border-2 border-white rounded-full animate-spin" />
+                ) : (
+                  "Add to Cart"
+                )}
               </button>
             </div>
           </div>
 
-          <div className="w-full bg-primary hover:bg-secondary duration-300 cursor-pointer rounded text-white text-center py-1.5 mt-2">
-            <button className="text-sm outline-none cursor-pointer">
-              Buy Now
-            </button>
-          </div>
+          <Link href="/checkout" className="w-full">
+            <div className="bg-primary hover:bg-secondary duration-300 cursor-pointer rounded text-white text-center py-1.5 mt-2">
+              <button className="text-sm outline-none cursor-pointer">
+                Buy Now
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
     </DialogContent>

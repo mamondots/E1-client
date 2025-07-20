@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@/assets/logo/qutox.png";
 import { menuList } from "@/utilits/menuList";
 import Link from "next/link";
@@ -10,9 +11,19 @@ import SideCart from "@/utilits/SideCart";
 import SideNav from "./SideNav";
 
 const Nav = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setIsSticky(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="">
-      <div className="Container py-4 flex items-center justify-between">
+      <div
+        className={`Container py-4 flex items-center justify-between bg-white duration-300 ${
+          isSticky ? "fixed bg-white shadow-md py-2 z-50 w-full" : "relative"
+        }`}
+      >
         <div className="lg:hidden flex">
           <SideNav />
         </div>
