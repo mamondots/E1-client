@@ -1,15 +1,15 @@
-import dress1 from "@/assets/products/dress1.webp";
-import dress2 from "@/assets/products/dress1.2.webp";
-import dress3 from "@/assets/products/dress8.webp";
-import dress4 from "@/assets/products/dress8.1.webp";
-import dress5 from "@/assets/products/dress10.webp";
-import dress6 from "@/assets/products/dress10.1.webp";
-import dress7 from "@/assets/products/dress9.webp";
-import dress8 from "@/assets/products/dress9.1.webp";
-import dress9 from "@/assets/products/dress18.webp";
-import dress10 from "@/assets/products/dress23.webp";
-import dress11 from "@/assets/products/dress23.1.webp";
-import dress12 from "@/assets/products/dress3.webp";
+import dress1 from "@/assets/products/frontView.webp";
+import dress2 from "@/assets/products/backView.webp";
+import dress3 from "@/assets/products/frontView.webp";
+import dress4 from "@/assets/products/backView.webp";
+import dress5 from "@/assets/products/frontView.webp";
+import dress6 from "@/assets/products/backView.webp";
+import dress7 from "@/assets/products/frontView.webp";
+import dress8 from "@/assets/products/backView.webp";
+import dress9 from "@/assets/products/frontView.webp";
+import dress10 from "@/assets/products/backView.webp";
+import dress11 from "@/assets/products/frontView.webp";
+import dress12 from "@/assets/products/backView.webp";
 
 export const newProductList = [
   {

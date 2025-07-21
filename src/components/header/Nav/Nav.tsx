@@ -45,7 +45,7 @@ const Nav = () => {
           <p>
             <SerachBar />
           </p>
-          <Link href="/singIn">
+          <Link href="/signIn">
             <p className="lg:block hidden">
               <UserRound size={18} />
             </p>

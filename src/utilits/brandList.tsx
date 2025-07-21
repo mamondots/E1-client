@@ -1,10 +1,10 @@
-import brand1 from "@/assets/brand/brand1.jpeg";
-import brand2 from "@/assets/brand/brand2.jpeg";
-import brand3 from "@/assets/brand/brand3.jpeg";
-import brand4 from "@/assets/brand/brand4.jpeg";
-import brand5 from "@/assets/brand/brand5.jpeg";
-import brand6 from "@/assets/brand/brand6.jpeg";
-import brand7 from "@/assets/brand/brand7.jpeg";
+import brand1 from "@/assets/brand/brand.webp";
+import brand2 from "@/assets/brand/brand.webp";
+import brand3 from "@/assets/brand/brand.webp";
+import brand4 from "@/assets/brand/brand.webp";
+import brand5 from "@/assets/brand/brand.webp";
+import brand6 from "@/assets/brand/brand.webp";
+import brand7 from "@/assets/brand/brand.webp";
 export const brandList = [
   {
     id: 1,

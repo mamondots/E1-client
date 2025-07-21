@@ -94,7 +94,7 @@ const SingUpForm = () => {
       <div>
         <p className="text-center text-sm py-4 text-[#474646]">
           If you have already account{" "}
-          <Link href="/singIn">
+          <Link href="/signIn">
             <span className="font-medium text-primary cursor-pointer">
               please Log In
             </span>

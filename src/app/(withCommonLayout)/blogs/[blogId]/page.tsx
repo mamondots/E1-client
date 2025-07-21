@@ -1,7 +1,7 @@
 import PageSection from "@/utilits/PageSection";
 import Image from "next/image";
 import React from "react";
-import img from "@/assets/blogs/blog1.webp";
+import img from "@/assets/blogs/blog.webp";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

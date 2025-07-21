@@ -73,7 +73,7 @@ const SingInForm = () => {
 
         <p className="text-center text-sm py-4 text-[#474646]">
           If you are new here{" "}
-          <Link href="/singUp">
+          <Link href="/signUp">
             <span className="font-medium text-primary cursor-pointer">
               create account first
             </span>

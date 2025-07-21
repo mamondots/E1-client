@@ -1,6 +1,7 @@
 import { poppins } from "@/app/font";
 import React from "react";
-import image from "@/assets/banner/sectionImage.webp";
+import image from "@/assets/banner/sectionBanner.webp";
+import Link from "next/link";
 interface Props {
   second: string;
   third?: string;
@@ -16,7 +17,11 @@ const PageSection: React.FC<Props> = ({ second, third }) => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center gap-2">
-        <h1 className="hover:text-primary duration-300 cursor-pointer">home</h1>
+        <Link href="/">
+          <h1 className="hover:text-primary duration-300 cursor-pointer">
+            home
+          </h1>
+        </Link>
         <p>{">"}</p>
         <p className="">{second}</p>
         <p className="">{third}</p>
