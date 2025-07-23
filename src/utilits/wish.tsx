@@ -1,6 +1,6 @@
-import dress1 from "@/assets/products/frontView.webp";
-import dress3 from "@/assets/products/frontView.webp";
-import dress9 from "@/assets/products/frontView.webp";
+import dress1 from "@/assets/products/dress1.webp";
+import dress3 from "@/assets/products//dress10.webp";
+import dress9 from "@/assets/products/dress9.webp";
 export const wishList = [
   {
     id: 1,

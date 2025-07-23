@@ -1,8 +1,8 @@
-import img1 from "@/assets/blogs/blog.webp";
-import img2 from "@/assets/blogs/blog.webp";
-import img3 from "@/assets/blogs/blog.webp";
-import img4 from "@/assets/blogs/blog.webp";
-import img5 from "@/assets/blogs/blog.webp";
+import img1 from "@/assets/blogs/blog1.webp";
+import img2 from "@/assets/blogs/blog2.webp";
+import img3 from "@/assets/blogs/blog3.webp";
+import img4 from "@/assets/blogs/blog4.webp";
+import img5 from "@/assets/blogs/blog5.webp";
 
 export const blogsList = [
   {

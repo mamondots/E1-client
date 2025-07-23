@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "@/assets/products/flaseDiscount.webp";
+import image1 from "@/assets/products/flaseBanner.webp";
 import Image from "next/image";
 
 import SectionTitle from "@/utilits/SectionTitle";

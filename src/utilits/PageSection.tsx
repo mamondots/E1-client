@@ -1,6 +1,6 @@
 import { poppins } from "@/app/font";
 import React from "react";
-import image from "@/assets/banner/sectionBanner.webp";
+import image from "@/assets/banner/sectionImage.webp";
 import Link from "next/link";
 interface Props {
   second: string;
